@@ -1,0 +1,335 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- DC Nivo Slider CSS -->
+<link rel="stylesheet" href="nivo-slider.css" type="text/css" media="screen" />
+
+<!-- DC Javascript Library -->
+<script type="text/javascript" src="jquery.min.js"></script> <!-- jQuery Library (do not call twice on same page) -->
+
+<!-- DC Nivo Slider JS -->
+<script type="text/javascript" src="jquery.nivo.slider.pack.js"></script>
+
+<!-- DC Nivo Slider Settings -->
+<script type="text/javascript">
+$(window).load(function() {
+    $('#slider').nivoSlider({
+        effect: 'random', // Effects available: 'random,fold,fade,boxRandom,sliceDown,sliceDownLeft,sliceUp,sliceUpLeft,sliceUpDown,sliceUpDownLeft,slideInRight,slideInLeft,boxRain,boxRainReverse,boxRainGrow,boxRainGrowReverse'
+        slices: 15, // For slice animations
+        boxCols: 8, // For box animations
+        boxRows: 4, // For box animations
+        animSpeed: 500, // Slide transition speed
+        pauseTime: 2400, // How long each slide will show before next slide (2400 = 2 seconds)
+        startSlide: 0, // Set starting Slide (0 index)
+        directionNav: true, // Next & Prev navigation
+        directionNavHide: true, // Only show on hover
+        controlNav: false, // 1,2,3... navigation
+        controlNavThumbs: false, // Use thumbnails for Control Nav
+            controlNavThumbsFromRel:true, // Generates the thumbnail url from the "rel" attribute in your image tags
+        pauseOnHover: true, // Stop animation while hovering
+        manualAdvance: false, // Force manual transitions
+        prevText: '<', // Prev directionNav text
+        nextText: '>', // Next directionNav text
+        randomStart: false, // Start on a random slide
+        beforeChange: function(){}, // Triggers before a slide transition
+        afterChange: function(){}, // Triggers after a slide transition
+        slideshowEnd: function(){}, // Triggers after all slides have been shown
+        lastSlide: function(){}, // Triggers when last slide is shown
+        afterLoad: function(){} // Triggers when slider has loaded
+    });
+});
+</script>
+
+<!-- DC Nivo Slider Start -->
+<title>Sign up</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript">
+function validateForm()
+{
+var x=document.forms["myForm"]["sfname"].value
+//var y=document.forms["myForm"]["sdob"].value
+var z=document.forms["myForm"]["sage"].value
+var a=document.forms["myForm"]["sgender"].value
+var b=document.forms["myForm"]["saddress"].value
+var c=document.forms["myForm"]["suname"].value
+var d=document.forms["myForm"]["spassword"].value
+var e=document.forms["myForm"]["scpassword"].value
+
+
+if ((c==null|| c=="")&&(d==null || d=="")&&(e==null || e=="")&&(a==null || a=="")&&(b==null || b=="")&&(x==null || x=="")&&(z==null || z==""))
+  {
+  alert("Username and Password must be filled out");
+  return false;
+  }
+if (x==null || x=="")
+  {
+  alert("First name should be given");
+  return false;
+  }
+if (z==null || z=="")
+  {
+  alert("age should be given");
+  return false;
+  }
+if (b==null || b=="")
+  {
+  alert("address field necessary");
+  return false;
+  }
+if (c==null || c=="")
+  {
+  alert("Username must be filled out");
+  return false;
+  }
+if (d==null || d=="")
+  {
+  alert("Password must be filled out");
+  return false;
+  }
+if (e==null || e=="")
+  {
+  alert("Password must be confirmed");
+  return false;
+  }
+if (d!=e)
+  {
+	alert("Passwords are not matching");
+	return false;
+  }
+if(isNaN(z))
+{
+alert("age should be a number");
+return false;
+}
+}
+
+</script>
+
+
+</head>
+<body>
+<div class="main_wrap">
+  <div class="main">
+    <div class="main_wrap">
+      <div class="top_area">
+        <div class="top_area_main">
+          <div class="logo_area">
+            <div class="main_wrap">
+             <div class="logo_pasition"><a href="index.html"><img src="images/logo.jpg" alt="" /></a></div>
+            </div>
+          </div>
+          <div class="nav_area">
+            <div class="main_wrap">
+              <div class="nav_pasition">
+                <div class="nav_wrap">
+                  <ul>
+                   <li><a href="index.html" class="homeactive">Home</a></li>
+                    <li><a href="about us.html" class="home">About Us</a></li>
+                    <li><a href="Appointment.html" class="home">Appointment</a></li>
+                    <li><a href="Cunsoltuncy.html" class="home">Consultancy</a></li>
+                    <li><a href="Tips.html" class="home">Tips</a></li>
+
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header_area">
+        <div class="main_wrap">
+          <div class="header_bg">
+             <div style="width:894px;   "> <!-- define slider container width (strict enforce) -->
+  <div id="slider-wrapper">
+    <div id="slider" class="nivoSlider">
+
+        <!-- local sample image:
+        <img src="dreamcodes/sliders/images/nivo-slider/980x400-image.jpg" width="894" height="356" title="#htmlcaption" /> -->
+
+        <!-- Slide 1 -->
+        <img src="images/003.PNG" width="894" height="356" title="#htmlcaption1" />
+
+        <!-- Slide 2 -->
+        <img src="images/002.jpg" width="894" height="356" title="#htmlcaption2" />
+
+		<!-- Slide 3 -->
+        <img src="images/004.jpg" width="894" height="356" title="#htmlcaption2" />
+
+
+    </div> <!-- /slider -->
+
+
+
+  </div> <!-- /slider-wrapper -->
+</div>
+<!-- DC Nivo Slider End -->
+<div class="tsc_clear"></div> <!-- line break/clear line -->
+          </div>
+        </div>
+      </div>
+      <div class="welcome_area">
+        <div class="main_wrap">
+          <div class="welcome_main">
+            <div class="main_wrap">
+               
+               <table width="100%" height="313" border="0" cellpadding="3" cellspacing="4" bordercolor="#00CCFF">
+			  <tr>
+
+			  <td bordercolor="#3300FF"><div align="justify"><a href="Custard_Apple.asp" class="link6Innerlinks">Custard Apple - Health 			Benefits</a><strong>: </strong><span class="text1"> Custard Apple promotes digestion and cures diarrhoea </span></div></td>
+ </tr>
+			  <tr>
+                  <td bordercolor="#3300FF"><span class="link6Innerlinks"><a href="http://healthtips.in/apples-for-health.asp" class="link6Innerlinks">Apples are rich in vitamins</a> </span><span class="text1">and helps to reduce risks of colon cancer, prostrate cancer and lung cancer. </span></td>
+                </tr>
+			  <tr>
+                  <td bordercolor="#3300FF"><div align="justify"><span class="text1"><a href="http://www.healthtips.in/radish.asp" class="link6Innerlinks">Radishes and their greens provide an excellent source of vitamin   C</a> and a powerful antioxidant. It has anti-inflammatory properties too.Â    Radish leaves are a good source of calcium.Â  Radishes contain cancer-protective properties.Â </span></div></td>
+                </tr>
+			  <tr>
+                  <td bordercolor="#3300FF"><div align="justify"><span class="text1"><a href="http://www.healthtips.in/chives.asp" class="link6Innerlinks">Chives are known for their beneficial effect on the digestive system and blood pressure</a>.  Chives are said to reduce the risk of several types of cancers.
+</span></div></td>
+                </tr>
+			   <tr>
+			     <td bordercolor="#3300FF"></td>
+		        </tr>
+			   <tr>
+                  <td bordercolor="#3300FF"><div align="justify"><span class="link6Innerlinks"><a href="coconut.asp" class="link6Innerlinks">Coconut is known for its antifungal, anti bacterial properties:</a> </span><span class="text1"> Coconut oil forms the base of many Ayurvedic medicinal preparations. </span></div></td>
+                </tr>
+			  <tr>
+                  <td bordercolor="#3300FF"><div align="justify"><span class="link6Innerlinks"><a href="Cherries.asp" class="link6Innerlinks">Cherries reduce pain and inflammation:</a> </span><span class="text1">Cherries are good source of many vitamins, minerals and are tasty to eat. </span></div></td>
+                </tr>
+			  <tr>
+                  <td bordercolor="#3300FF"><div align="justify"><span class="link6Innerlinks"><a href="Plums.asp" class="link6Innerlinks">Plums lowers age-related macular degeneration:</a> </span><span class="text1">Plums are sweet, juicy and are a good source of Vitamin c, Vitamin A, Vitamin B2 and Potassium. </span></div></td>
+                </tr>
+<tr>
+<tr>
+                  <td bordercolor="#3300FF"><div align="justify"><span class="link6Innerlinks"><a href="spinach.asp" class="link6Innerlinks">Spinach when cooked is an excellent source of Iron and Calcium:</a> </span><span class="text1">It is recommended for pregnant women in the first 3 months for its folic acid contents..</span></div></td>
+                </tr>
+<tr>
+                  <td bordercolor="#3300FF"><div align="justify"><span class="link6Innerlinks"><a href="Beetroot.asp" class="link6Innerlinks">Beetroots rich in potassium and fiber:</a> </span><span class="text1">Beetroots contains good amount of folate, potassium and manganese.  They are less in calories and are effective in curing skin problems.</span></div></td>
+                </tr>
+<tr>
+                  <td bordercolor="#3300FF"><div align="justify"><span class="link6Innerlinks"><a href="Cauliflower.asp" class="link6Innerlinks">Cauliflower is good for the heart and reduces the risk of cancer:</a> </span><span class="text1">Cauliflower is highly nutritious and is effective in curing many ailments.  It is rich in folate and is good for pregnant woman.</span></div></td>
+                </tr>
+<tr>
+                  <td bordercolor="#3300FF"><div align="justify"><span class="link6Innerlinks"><a href="mango.asp" class="link6Innerlinks">Mangoes are rich in Iron and Vitamins:</a> </span><span class="text1">Mangoes supply ample potassium, making them ideal for hypertensive patients   or anyone looking to replenish energy after physical activity</span></div></td>
+                </tr>
+<tr>
+                  <td bordercolor="#3300FF"><div align="justify"><span class="link6Innerlinks"><a href="tomato.asp" class="link6Innerlinks">Tomatoes reduce the risk of heart attack:</a> </span><span class="text1">Tomatoes are a rich source of lycopene. Lycopene is a potent antioxidant.</span></div></td>
+                </tr>
+<tr>
+                  <td bordercolor="#3300FF"><div align="justify"><span class="link6Innerlinks"><a href="muskmelon.asp" class="link6Innerlinks">Musk Melon - Tropical Delight : </a> </span> <span class="text1">Musk melon is a tropical fruit which is been cultivated for a very long time. It is a rich source of vitamin 'C' and is effective in reducing body heat.</span></div></td>
+                </tr>
+<tr>
+                  <td bordercolor="#3300FF"><div align="justify"><span class="link6Innerlinks"><a href="Cabbage_cures_ulcer.asp" class="link6Innerlinks">Cabbage helps cure ulcers and prevents colon cancer: </a> </span> <span class="text1">Cabbage is a well
+                    known common vegetable.  Its is low in calories and is long known for its healing properties.</span></div></td>
+                </tr>
+		<tr>
+                  <td bordercolor="#3300FF"><div align="justify"><span class="link6Innerlinks"><a href="bittergourd.asp" class="link6Innerlinks">Bitter Gourd - Health Benefits: </a> </span> <span class="text1">Bitter Gourd is a tropical vegetable.  It is a well known cure for diabetes.</span></div></td>
+                </tr>
+		<tr>
+                  <td bordercolor="#3300FF"><div align="justify"><span class="link6Innerlinks"><a href="avocado.asp" class="link6Innerlinks">Avocado - for fitness and health : </a> </span> <span class="text1">Avocado is rich in pottasium content.  The fruit is also a good source of vitamins. </span></div></td>
+                </tr>
+                <tr>
+                  <td bordercolor="#3300FF"><div align="justify"><span class="link6Innerlinks"><a href="nutritional-benefits-papaya.asp" class="link6Innerlinks">Papaya - A rich source of Minerals and Fibre </a> </span> <span class="text1">: Papaya has high nutritional benefits. It is rich in Anti-oxidants, Minerals and Fibre. It also helps in Skin Treatments. </span></div></td>
+                </tr>
+                <tr>
+                  <td bordercolor="#3300FF"><div align="justify"><span class="link6Innerlinks"><a href="Nutrition-Oats-Cure-Constipation-Heart.asp" class="link6Innerlinks">Oats - Fibre food that cures constipation </a></span> <span class="text1">: Oats have some unique fatty acids and antioxidants which together with Vitamin E   slow cell damage.</span></div></td>
+                </tr>
+                <tr>
+                  <td bordercolor="#3300FF"><div align="justify"><span class="link6Innerlinks"><a href="nutritional-benefits-watermelon.asp" class="link6Innerlinks">Nutritional
+                    benefits of Watermelon </a> </span> <span class="text1">: Watermelon is highly refreshing during summer. It does not contain cholesterol and helps in eye sight also. </span></div></td>
+                </tr>
+                <tr>
+                  <td bordercolor="#3300FF"><div align="justify"><span class="link6Innerlinks"><a href="nutritional-benefits-banana.asp" class="link6Innerlinks">Nutritional
+                    benefits of Banana </a> </span> <span class="text1">: Banana
+                      helps in the treatment of Depression, Anemia, Blood Pressure,
+                    Brain power, Constipation, etc. </span></div></td>
+                </tr>
+                <tr>
+                  <td bordercolor="#3300FF">
+                    <div align="justify"><span class="link6Innerlinks"><a href="almond_myths_and_benefits.asp" class="link6Innerlinks">Almond:
+                      A highly Nutritious fruit</a> </span> <span class="text1">:
+                      Consumption of Almond lowers cholesterol levels, reduces
+                      the risk of lifestyle diseases and gives overall wellness</span></div>                  </td>
+                </tr>
+                <tr>
+                  <td bordercolor="#3300FF">
+                    <div align="justify"><a href="egg_a_nutrition_food.asp" class="link6Innerlinks">Egg:
+                      A nutritious food</a> : <span class="text1">Egg is a healthy
+                      and nutritious food. Lecithin in eggs prevents the absorption
+                      of cholesterol of egg and other sources too</span></div>                  </td>
+                </tr>
+                <tr>
+                  <td bordercolor="#3300FF">
+                    <div align="justify"><a href="calcium_builds_strong_bones.asp" class="link6Innerlinks">Calcium:
+                      The bone builder</a>: <span class="text1">Calcium Builds
+                      Strong Bones. Get calcium from greens, beans, or fortified
+                      foods. Vitamin D controls your body's use of calcium.</span></div>                  </td>
+                </tr>
+                <tr>
+                  <td bordercolor="#3300FF">
+                    <div align="justify"><a href="combat_for_stress_free_life.asp" class="link6Innerlinks">Healthy
+                      food for Stress Free Life</a>: <span class="text1">Nutritious
+                      and balanced diet is a must to free ourself from the physical
+                      and mental diseases and relieve stress</span></div>                  </td>
+                </tr>
+                <tr>
+                  <td bordercolor="#3300FF">
+                    <div align="justify"><a href="mushrooms_nutritious_health.asp" class="link6Innerlinks">Mushrooms
+                      - A highly nutritious food</a>: <span class="text1">Mushrooms
+                      are rich in minerals, vitamin D (ergosterol), thiamin (B1),
+                      riboflavin (B2), niacin (B3), dietary fibre as well as all
+                      the essential amino acids and are low in fat and calories.</span></div>                  </td>
+                </tr>
+                <tr>
+                  <td bordercolor="#3300FF">
+                    <div align="justify">
+                     <a href="benefits_of_amla.asp" class="link6Innerlinks">Gooseberry
+                        (Amla) : Rich in Vitamin C</a>: <span class="text1">Amla
+                          or Gooseberry has many nutritious benefits. The amla has
+                          been found to be the most abundant source of Vitamin C in
+                          the plant kingdom</span>
+                    </div>                  </td>
+                </tr>
+				<tr>
+                  <td bordercolor="#3300FF"><div align="justify">
+				 <a href="Zucchini.asp" class="link6Innerlinks">Health Benefits of Zucchini</a> :<span class="text1"> Zucchini when consumed regularly helps maintain blood pressure at normal levels.</span></div></td>
+                </tr>
+              </table>
+            </div>          </td>
+        </tr>
+      </table>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <br class="blank" />
+
+
+
+      <div class="main">
+        <div class="footer_area">
+          <div class="main_wrap">
+            <div class="footer_left_area"><img src="images/footer_left_image.jpg" alt="" /></div>
+            <div class="footer_meddile_area">
+              <div class="footer_repeat">
+                <div style="padding-top:45px;">
+                  <div class="footer_text_area">
+                   <p class="text_col"><a href="index.html" class="footeractive">Home</a> | <a href="about us.html" class="footer">About Us</a> | <a href="Appointment.html" class="footer">Appointment</a> | <a href="Cunsoltuncy.html" class="footer">Consultancy</a> | <a href="Sign Up.html" class="footer">Sign Up</a></p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="footer_left_area"><img src="images/footer_right_image.jpg" alt=""/></div>
+            <div class="black"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</html>
